@@ -19,6 +19,7 @@ submitBtn.onclick = () => {
             if (data == 'success') {
                 alert('Email sent successfully');
                 submitBtn.value = 'Send';
+                formEl.reset();
             }
 
             if (data == 'error') {
@@ -31,9 +32,6 @@ submitBtn.onclick = () => {
                 submitBtn.value = 'Send';
             }
             
-            formEl.reset();
-            
-//             location.replace('index.php');
         }
     }
 
