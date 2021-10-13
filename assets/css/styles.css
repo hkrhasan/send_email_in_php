@@ -39,6 +39,7 @@ h1{
   width: 360px;
   padding: 2rem 2rem;
   border-radius: 1rem;
+  background-color: #ffffff;
 }
 .form__title{
   font-weight: 400;
@@ -136,7 +137,7 @@ h1{
 @media screen and (min-width: 568px){
   .form{
     width: 70%;
-    /* box-shadow: 0 10px 25px rgba(92,99,105,.2); */
+    box-shadow: 0 10px 25px rgba(92,99,105,.2);
   }
 
 }
