@@ -18,18 +18,26 @@ submitBtn.onclick = () => {
 
             if (data == 'success') {
                 alert('Email sent successfully');
+                submitBtn.value = 'Send';
             }
 
             if (data == 'error') {
                 alert('Something went wrong');
+                submitBtn.value = 'Send';
             }
 
             if (data == 'missing_fields') {
                 alert('All fields are required');
+                submitBtn.value = 'Send';
             }
-            location.replace('index.php');
+            
+            formEl.reset();
+            
+//             location.replace('index.php');
         }
     }
 
     xhr.send(new FormData(formEl));
+    submitBtn.value = 'Loading ...';
+    submitBtn.disabled = true;
 }
